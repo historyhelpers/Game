@@ -2,6 +2,7 @@
 
 <head>
     <title> Snake Game </title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
 </head>
 <style type="text/css">
     body {
@@ -17,12 +18,12 @@
 
 <body>
     <span
-        style="color: azure; font-size: 60px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-     Snake Game
+        style="color: azure; font-size: 60px; font-family: 'Raleway', sans-serif;">
+     Nokia Version Snake
     </span>
     &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
     &emsp;&emsp;&emsp;&emsp;&emsp;
-    <b id="score" style="font-size: 200%; font-family:cursive; color: cornsilk;"> Your Score : 0</b><br>
+    <b id="score" style="font-size: 200%; font-family: 'Raleway', sans-serif; color: cornsilk;"> Your Score : 0</b><br>
     <hr />
     <canvas id="game" width="800" height="600"></canvas>
 </body>
@@ -113,8 +114,8 @@
                 ctx.fillStyle = "red";
                 ctx.fillRect(Snake[i].x * 20 + 1, Snake[i].y * 20 + 1, 18, 18);
                 ctx.fillStyle = "WHITE";
-                ctx.font = "45px CURSIVE";
-                ctx.fillText("GAME OVER", 280, 310);
+                ctx.font = "45px Raleway";
+                ctx.fillText("Game Over! Reload to play again!", 280, 310);
             }
         }
     }
